@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EggTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FgF-1e-N87">
+                                <rect key="frame" x="38.666666666666657" y="114" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="DTd-tp-WZM"/>
+                                    <constraint firstAttribute="height" constant="100" id="KR6-zy-TSA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="soft-boiled">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="softBoiledBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BEC-wR-ZDp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFk-Sm-Pc8">
+                                <rect key="frame" x="146.66666666666666" y="114" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="LBs-tx-L9N"/>
+                                    <constraint firstAttribute="width" constant="100" id="Yus-GQ-suC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="medium-boiled"/>
+                                <connections>
+                                    <action selector="medBoiledBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BlM-Ho-Hx5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqq-D0-oEn">
+                                <rect key="frame" x="254.66666666666663" y="114" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Xwj-60-uW6"/>
+                                    <constraint firstAttribute="width" constant="100" id="wCE-AE-pKq"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="hard-boiled"/>
+                                <connections>
+                                    <action selector="hardBoiledBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KSU-gg-Bdw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="medium-boiled" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tuG-Iv-qgz">
+                                <rect key="frame" x="146.66666666666666" y="221" width="107" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="107" id="l8U-dT-O0o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hard-boiled" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKp-Ib-fyH">
+                                <rect key="frame" x="254.66666666666663" y="221" width="101" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="Eb5-Tj-w2D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="soft-boiled" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4g-v8-0Nd">
+                                <rect key="frame" x="38.666666666666657" y="221" width="101" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="101" id="0H0-4f-6Z2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exG-sI-z5w">
+                                <rect key="frame" x="147" y="413" width="99" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="99" id="umh-9z-CmX"/>
+                                    <constraint firstAttribute="height" constant="51" id="xjx-IA-rUw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IS8-HJ-XMU">
+                                <rect key="frame" x="156" y="698" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="Ygv-iH-KI1"/>
+                                    <constraint firstAttribute="height" constant="53" id="aeo-vO-WEA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play"/>
+                                <connections>
+                                    <action selector="startBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BsT-yS-cHm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yFk-Sm-Pc8" firstAttribute="leading" secondItem="FgF-1e-N87" secondAttribute="trailing" constant="8" id="0y0-Uq-Yzt"/>
+                            <constraint firstItem="tuG-Iv-qgz" firstAttribute="top" secondItem="yFk-Sm-Pc8" secondAttribute="bottom" constant="7" id="0zd-GZ-GHK"/>
+                            <constraint firstItem="tuG-Iv-qgz" firstAttribute="leading" secondItem="yFk-Sm-Pc8" secondAttribute="leading" id="8Au-Ja-ydj"/>
+                            <constraint firstItem="IS8-HJ-XMU" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Jns-6t-czD"/>
+                            <constraint firstItem="UKp-Ib-fyH" firstAttribute="top" secondItem="Dqq-D0-oEn" secondAttribute="bottom" constant="7" id="KOC-d9-QuW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IS8-HJ-XMU" secondAttribute="bottom" constant="40" id="Uvc-vx-K5e"/>
+                            <constraint firstItem="yFk-Sm-Pc8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WwP-g4-AdR"/>
+                            <constraint firstItem="yFk-Sm-Pc8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="Y7f-D3-3nG"/>
+                            <constraint firstItem="R4g-v8-0Nd" firstAttribute="leading" secondItem="FgF-1e-N87" secondAttribute="leading" id="eDW-7g-l4q"/>
+                            <constraint firstItem="UKp-Ib-fyH" firstAttribute="leading" secondItem="Dqq-D0-oEn" secondAttribute="leading" id="jQW-7k-UpT"/>
+                            <constraint firstItem="FgF-1e-N87" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="n1m-Oo-axn"/>
+                            <constraint firstItem="exG-sI-z5w" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oAH-Zt-BLa"/>
+                            <constraint firstItem="exG-sI-z5w" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="pbm-Tc-bdX"/>
+                            <constraint firstItem="R4g-v8-0Nd" firstAttribute="top" secondItem="FgF-1e-N87" secondAttribute="bottom" constant="7" id="qLa-2J-Vbf"/>
+                            <constraint firstItem="Dqq-D0-oEn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="55" id="uzu-9d-98Q"/>
+                            <constraint firstItem="Dqq-D0-oEn" firstAttribute="leading" secondItem="yFk-Sm-Pc8" secondAttribute="trailing" constant="8" id="vur-ob-dip"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hardBoiledBtn" destination="Dqq-D0-oEn" id="QAq-Oa-ylS"/>
+                        <outlet property="medBoiledBtn" destination="yFk-Sm-Pc8" id="q9C-Xy-HQa"/>
+                        <outlet property="softBoiledBtn" destination="FgF-1e-N87" id="d0o-jU-eu3"/>
+                        <outlet property="startBtn" destination="IS8-HJ-XMU" id="uOl-Jb-vwt"/>
+                        <outlet property="timerLabel" destination="exG-sI-z5w" id="Nul-zN-xhc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hard-boiled" width="100" height="100"/>
+        <image name="medium-boiled" width="100" height="100"/>
+        <image name="play" width="80" height="80"/>
+        <image name="soft-boiled" width="100" height="100"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
